@@ -1,0 +1,77 @@
+<article class="unit-article layout-post">
+	<div class="unit-inner unit-article-inner">
+		<div class="content">
+			<header>
+				<div class="unit-head">
+					<div class="unit-inner unit-head-inner">
+						<h1 class="h2 entry-title left">{{ page.title }}</h1>
+						<ul class="list-category list-linear right">
+							<li class="list-head"></li>
+							{% assign categories_list = page.categories %}
+							{% include JB/categories_list %}
+						</ul>
+					</div><!-- unit-inner -->
+				</div><!-- unit-head -->
+			</header>
+
+			<div class="bd">
+				<div class="entry-content">
+					<span class="">{{ page.date | date: '%Y-%m-%d' }}</span>
+					<ul class="list-tag list-linear right">
+						<li class="list-head">标签：</li>
+						{% assign tags_list = page.tags %}
+						{% include JB/tags_list %}
+					</ul>
+					<p></p>
+					<div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"【看门的大叔】热衷于开源项目，乐于钻研（分享自 @tokwok）","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{},"image":{"viewList":["tsina","qzone","weixin","douban"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["tsina","qzone","weixin","douban"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+					<br>
+					{{ content }}
+					<!-- <div class="meta">
+						<p class="date-publish">
+							发布时间: 
+							<date class="date-pub" title="{{ page.date | date_to_xmlschema }}" datetime="{{ page.date | date_to_xmlschema }}" pubdate>
+							<span class="year">{{ page.date | date: '%Y' }}</span>-<span class="month"><abbr>{{ page.date | date: '%m' }}</abbr></span>-<span class="day">{{ page.date | date: '%d' }}</span>						
+							</date>
+						</p>						
+					</div> --><!-- meta -->
+				</div><!-- entry-content -->	
+				<hr>
+				<div class="misc-content">
+					<div class="social">
+						<ul class="list-linear">
+							<li><div class="twitter-tweet"><wb:share-button appkey="449936739" addition="number" type="button" default_text="（分享自 @tokwok）" ralateUid="2049447842"></wb:share-button></div></li>
+						</ul>
+					</div>
+					<div class="social">
+						<nav class="pagination">
+							<ul class="list-linear">
+								{% if page.previous %}
+								<li class="prev"><a class="internal" rel="prev"  href="{{ page.previous.url }}" title="查看上一篇 {{ page.previous.title }}">&larr; {{ page.previous.title }}</a></li>
+								{% endif %}
+								{% if page.previous and page.next %}
+								<li class="pipe"> | </li>
+								{% endif %}
+								{% if page.next %}
+								<li class="next"><a class="internal" rel="next"  href="{{ page.next.url }}" title="查看下一篇 {{ page.next.title }}">{{ page.next.title }} &rarr;</a></li>
+								{% endif %}
+							</ul>
+						</nav>
+					</div>
+					<hr>
+					<div class="comment">
+					{% include JB/comments %}
+					</div>
+				</div><!-- misc-content -->
+			</div><!-- bd -->
+			<footer class="unit-foot">
+				<div class="unit-inner unit-foot-inner">
+					<p class="gotop">
+						<a href="#page">回到顶部</a>
+					</p>
+				</div>
+			</footer>
+
+		</div><!-- content -->
+	</div><!-- unit-inner -->
+</article>
