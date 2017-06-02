@@ -1,9 +1,9 @@
 ---
 layout: page
 title: "热衷于开源项目，乐于钻研，闲余看门。"
-tagline: "一个努力敲击键盘的码农（My blog）"
-keywords: "博客,互联网,电子商务,开源,程序员,PHP,PHP框架"
-description: "个人博客ironguo.github.io，从事互联网行业，PHP程序员一个，热衷于开源项目，乐于钻研。"
+tagline: "一个努力敲击键盘的码农（踏月寻玉）"
+keywords: "博客,互联网,程序员"
+description: "个人博客junerain.github.io"
 ---
 {% include JB/setup %}
 
