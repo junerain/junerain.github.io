@@ -1,8 +1,8 @@
 ---
 layout: page
-title: "热衷于开源项目，乐于钻研，闲余看门。"
+title: "后端,C++,UNIX,云计算"
 tagline: "一个努力敲击键盘的码农（踏月寻玉）"
-keywords: "博客,互联网,程序员"
+keywords: "后端,C++,UNIX,云计算"
 description: "个人博客junerain.github.io"
 ---
 {% include JB/setup %}
