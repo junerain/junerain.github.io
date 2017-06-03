@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "MySQL NULL值和空字符串区别"
-keywords: "mysql,NULL,空字符串"
+title: "sshpass source install on aix"
+keywords: "sshpass,aix,source"
 description: ""
-category: mysql
-tags: [MySQL]
+category: AIX
+tags: [AIX]
 ---
-{% include JB/setup %} 
+{% include JB/setup %}
 
 `null`值需要额外的空间记录其是否为空，空字符串`''`不占用存储空间，MySQL中`null`是占用空间的，
 所以MySQL在进行比较的时候，`null`会参与字段比较，对效率有一部分的影响。
