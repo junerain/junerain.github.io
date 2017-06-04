@@ -75,7 +75,7 @@ Stop.
 
 ```c
 /* Define to rpl_malloc if the replacement function should be used. */
-~~#define malloc rpl_malloc~~
+#define malloc rpl_malloc
 ```
 
 ## 6、重新make，大功告成
