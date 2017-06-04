@@ -73,9 +73,9 @@ Stop.
 ```
 需要将在configure 生产的config.h文件中注释掉或者删掉
 
-```
+```c
 /* Define to rpl_malloc if the replacement function should be used. */
-/*#define malloc rpl_malloc*/
+~~#define malloc rpl_malloc~~
 ```
 
 ## 6、重新make，大功告成
