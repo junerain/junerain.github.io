@@ -1,4 +1,6 @@
 # 踏月寻玉
+## ![pic](./images/user_pic.jpg)
+
 
 一个努力敲击键盘的码农（My blog）
 
