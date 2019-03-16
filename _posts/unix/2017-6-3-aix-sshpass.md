@@ -29,7 +29,7 @@ cd sshpass-1.06
 ```
 不能直接编译通过，会报错误
 ```bash
-225_billmdb%make
+%make
         make  all-am
         source='main.c' object='main.o' libtool=no  DEPDIR=.deps depmode=xlc /bin/sh ./depcomp  cc -qlanglvl=extc89 -DHAVE_CONFIG_H -I.      -g -c -o main.o main.c
 "main.c", line 54.42: 1506-209 (S) Character constants must end before the end of a line.
@@ -56,7 +56,7 @@ make
 ```
 ## 5、产生的问题
 ```bash
-225_billmdb%make
+%make
         make  all-am
         source='main.c' object='main.o' libtool=no  DEPDIR=.deps depmode=xlc /bin/sh ./depcomp  /usr/vacpp/bin//xlc -DHAVE_CONFIG_H -I.      -g -c -o main.o main.c
         /usr/vacpp/bin//xlc  -g   -o sshpass main.o
@@ -80,7 +80,7 @@ Stop.
 
 ## 6、重新make，大功告成
 ```
-225_billmdb%sshpass
+%sshpass
 Usage: sshpass [-f|-d|-p|-e] [-hV] command parameters
    -f filename   Take password to use from file
    -d number     Use number as file descriptor for getting password
