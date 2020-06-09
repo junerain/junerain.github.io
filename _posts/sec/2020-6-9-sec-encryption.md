@@ -4,7 +4,7 @@ title: "加密技术"
 keywords: "encryption,decryption"
 description: ""
 category: encrypted
-tags: [AIX]
+tags: [sec]
 ---
 {% include JB/setup %}
 [TOC]
